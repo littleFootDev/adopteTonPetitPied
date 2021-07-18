@@ -232,6 +232,14 @@ footer p {
 .title {
   margin-bottom: 1.5rem;
 }
+.btn-submit {
+  background: #28b487;
+  transition: all 0.3s;
+}
+.btn-submit:hover {
+  transition: all 0.3s;
+  background: #e0115f;
+}
 
 /*Desctops */
 @media screen and (min-width: 768px) {
@@ -290,5 +298,8 @@ footer p {
   .image-don,
   .image-don-reverse {
     margin: 0 1.5rem;
+  }
+  form {
+    margin: auto;
   }
 }
