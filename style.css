@@ -223,3 +223,33 @@ footer p {
   transition: all 0.3s;
   background: #28b487;
 }
+/* Event Page  */
+.don {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 2rem;
+}
+.image-don img,
+.image-don-reverse img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+.image-don,
+.image-don-reverse {
+  margin: 1.5rem 0;
+}
+.txt-don {
+  background: #637d96;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.txt-don p {
+  font-size: 1.3rem;
+  font-style: justify;
+  margin: 0 1rem;
+  padding: 1.5rem 0;
+}
