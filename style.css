@@ -141,57 +141,6 @@ footer {
 footer p {
   font-size: 1.3rem;
 }
-/* Home Page Desctops */
-@media screen and (min-width: 768px) {
-  .navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .content-presentation {
-    flex-flow: row nowrap;
-    min-width: 60rem;
-  }
-  .presentation-img {
-    flex: 1;
-  }
-  .presentation-txt {
-    flex: 1;
-    justify-content: center;
-  }
-  .content-partenaire {
-    width: 80%;
-    margin: auto;
-  }
-  footer {
-    padding: 1rem;
-    font-size: 1rem;
-  }
-  .histoire {
-    flex-direction: column;
-    width: 80%;
-    margin: auto;
-  }
-  .histoire-img {
-    height: 40rem;
-  }
-  .pensionaire {
-    width: 80%;
-    margin: auto;
-  }
-  .btn-red,
-  .btn-green {
-    display: none;
-  }
-  .card-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0.5rem;
-    font-size: 1.5rem;
-    font-style: justify;
-  }
-}
 /* Notre Histoire */
 .histoire-img {
   background: url(./image/association.jpg);
@@ -252,4 +201,63 @@ footer p {
   font-style: justify;
   margin: 0 1rem;
   padding: 1.5rem 0;
+}
+/* Home Page Desctops */
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-presentation {
+    flex-flow: row nowrap;
+    min-width: 60rem;
+  }
+  .presentation-img {
+    flex: 1;
+  }
+  .presentation-txt {
+    flex: 1;
+    justify-content: center;
+  }
+  .content-partenaire {
+    width: 80%;
+    margin: auto;
+  }
+  footer {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .histoire {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+  .histoire-img {
+    height: 40rem;
+  }
+  .pensionaire {
+    width: 80%;
+    margin: auto;
+  }
+  .btn-red,
+  .btn-green {
+    display: none;
+  }
+  .card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-style: justify;
+  }
+  .don {
+    display: flex;
+    flex-direction: row;
+  }
+  .image-don,
+  .image-don-reverse {
+    margin: 0 1.5rem;
+  }
 }
