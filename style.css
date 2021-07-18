@@ -14,6 +14,8 @@ body {
   border: none;
   background: #333;
   border-radius: 0.5rem;
+  font-size: 1.3rem;
+  color: #fff;
 }
 .btnn a {
   text-decoration: none;
@@ -32,6 +34,9 @@ body {
 }
 .animation:hover::after {
   width: 100%;
+}
+.hiden {
+  display: none;
 }
 /* Home Page Mobile*/
 .content-logo {
@@ -173,4 +178,20 @@ footer p {
   background: url(./image/association.jpg);
   background-size: cover;
   background-position: center center;
+}
+/* Boarder Page */
+.pensionaire,
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
 }
