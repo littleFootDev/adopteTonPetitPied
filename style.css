@@ -202,7 +202,46 @@ footer p {
   margin: 0 1rem;
   padding: 1.5rem 0;
 }
-/* Home Page Desctops */
+/* Contact page */
+.contact {
+  width: 80%;
+  background: #637d96;
+  margin: 5rem auto;
+  padding-top: 2rem;
+  height: 27rem;
+}
+.container-form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.container-form input {
+  background: #fff;
+  border: 0;
+  border-bottom: 1px solid #555555;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  outline: 0;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+.title {
+  margin-bottom: 1.5rem;
+}
+.btn-submit {
+  background: #28b487;
+  transition: all 0.3s;
+}
+.btn-submit:hover {
+  transition: all 0.3s;
+  background: #e0115f;
+}
+
+/*Desctops */
 @media screen and (min-width: 768px) {
   .navigation {
     display: flex;
@@ -259,5 +298,8 @@ footer p {
   .image-don,
   .image-don-reverse {
     margin: 0 1.5rem;
+  }
+  form {
+    margin: auto;
   }
 }
