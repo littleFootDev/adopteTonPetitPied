@@ -47,18 +47,21 @@ h1 a {
 .nav-link {
   font-size: 1.3rem;
 }
-.content-presentation {
+.content-presentation,
+.histoire {
   display: flex;
   min-width: 30em;
   flex-direction: column-reverse;
 }
-.presentation-img {
+.presentation-img,
+.histoire-img {
   min-height: 30em;
   background: url(./image/accueil.jpg);
   background-size: cover;
   background-position: center center;
 }
-.presentation-txt {
+.presentation-txt,
+.histoire-txt {
   width: 100%;
   padding: 4rem 2rem;
   display: flex;
@@ -67,16 +70,19 @@ h1 a {
   background: #637d96;
   color: #fff;
 }
-.presentation-txt h2 {
+.presentation-txt h2,
+.histoire-txt h2 {
   margin-bottom: 2rem;
 }
-.presentation-txt p {
+.presentation-txt p,
+.histoire-txt p {
   font-size: 1.3rem;
   line-height: 1.8rem;
   letter-spacing: 0.5px;
   font-style: justify;
 }
-.presentation-img img {
+.presentation-img img,
+.histoire-img img {
   width: 100%;
 }
 .content-partenaire {
@@ -153,4 +159,18 @@ footer p {
     padding: 1rem;
     font-size: 1rem;
   }
+  .histoire {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+  .histoire-img {
+    height: 40rem;
+  }
+}
+/* Notre Histoire */
+.histoire-img {
+  background: url(./image/association.jpg);
+  background-size: cover;
+  background-position: center center;
 }
