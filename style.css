@@ -8,6 +8,9 @@ body {
   font-size: 62.5%;
   font-family: Lato;
 }
+nav {
+  background: #637d96;
+}
 .btnn {
   padding: 0.5rem 2rem;
   margin-top: 1rem;
@@ -172,6 +175,22 @@ footer p {
   .histoire-img {
     height: 40rem;
   }
+  .pensionaire {
+    width: 80%;
+    margin: auto;
+  }
+  .btn-red,
+  .btn-green {
+    display: none;
+  }
+  .card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-style: justify;
+  }
 }
 /* Notre Histoire */
 .histoire-img {
@@ -194,4 +213,13 @@ footer p {
   align-items: center;
   margin-top: 0.5rem;
   font-size: 1.5rem;
+  font-style: justify;
+}
+.btn-red {
+  background: #e0115f;
+  transition: all 0.3s;
+}
+.btn-red:hover {
+  transition: all 0.3s;
+  background: #28b487;
 }
