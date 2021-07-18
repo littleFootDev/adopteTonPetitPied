@@ -1,4 +1,4 @@
-/* commun */
+/* Commun */
 * ::before ::after {
   margin: 0;
   padding: 0;
@@ -33,7 +33,7 @@ body {
 .animation:hover::after {
   width: 100%;
 }
-/* Home page */
+/* Home Page Mobile*/
 .content-logo {
   display: flex;
   justify-content: center;
@@ -44,23 +44,8 @@ h1 a {
   text-decoration: none;
   color: #637d96;
 }
-/* h1::after {
-  content: "";
-  display: block;
-  width: 0;
-  margin: 2px auto 0 auto;
-  height: 4px;
-  border-radius: 2px;
-  background: #000;
-  transition: all 0.5s ease-out;
-}
-h1:hover::after {
-  width: 100%;
-} */
 .nav-link {
   font-size: 1.3rem;
-}
-.nav-link::after {
 }
 .content-presentation {
   display: flex;
@@ -78,7 +63,7 @@ h1:hover::after {
   padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   background: #637d96;
   color: #fff;
 }
@@ -141,4 +126,31 @@ footer {
 }
 footer p {
   font-size: 1.3rem;
+}
+/* Home Page Desctops */
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-presentation {
+    flex-flow: row nowrap;
+    min-width: 60rem;
+  }
+  .presentation-img {
+    flex: 1;
+  }
+  .presentation-txt {
+    flex: 1;
+    justify-content: center;
+  }
+  .content-partenaire {
+    width: 80%;
+    margin: auto;
+  }
+  footer {
+    padding: 1rem;
+    font-size: 1rem;
+  }
 }
