@@ -8,12 +8,17 @@ body {
   font-size: 62.5%;
   font-family: Lato;
 }
+nav {
+  background: #637d96;
+}
 .btnn {
   padding: 0.5rem 2rem;
   margin-top: 1rem;
   border: none;
   background: #333;
   border-radius: 0.5rem;
+  font-size: 1.3rem;
+  color: #fff;
 }
 .btnn a {
   text-decoration: none;
@@ -32,6 +37,9 @@ body {
 }
 .animation:hover::after {
   width: 100%;
+}
+.hiden {
+  display: none;
 }
 /* Home Page Mobile*/
 .content-logo {
@@ -167,10 +175,51 @@ footer p {
   .histoire-img {
     height: 40rem;
   }
+  .pensionaire {
+    width: 80%;
+    margin: auto;
+  }
+  .btn-red,
+  .btn-green {
+    display: none;
+  }
+  .card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-style: justify;
+  }
 }
 /* Notre Histoire */
 .histoire-img {
   background: url(./image/association.jpg);
   background-size: cover;
   background-position: center center;
+}
+/* Boarder Page */
+.pensionaire,
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-style: justify;
+}
+.btn-red {
+  background: #e0115f;
+  transition: all 0.3s;
+}
+.btn-red:hover {
+  transition: all 0.3s;
+  background: #28b487;
 }
