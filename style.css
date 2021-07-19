@@ -195,6 +195,7 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
 }
 .txt-don p {
   font-size: 1.3rem;
@@ -243,11 +244,17 @@ footer p {
 
 /*Desctops */
 @media screen and (min-width: 768px) {
+  /* commun */
   .navigation {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  footer {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  /* home Page */
   .content-presentation {
     flex-flow: row nowrap;
     min-width: 60rem;
@@ -263,10 +270,7 @@ footer p {
     width: 80%;
     margin: auto;
   }
-  footer {
-    padding: 1rem;
-    font-size: 1rem;
-  }
+  /* History Page*/
   .histoire {
     flex-direction: column;
     width: 80%;
@@ -283,6 +287,13 @@ footer p {
   .btn-green {
     display: none;
   }
+  /* Pensionaire Page */
+  .card {
+    width: 70%;
+  }
+  .card-img-top {
+    height: 30rem;
+  }
   .card-text {
     display: flex;
     justify-content: center;
@@ -291,6 +302,7 @@ footer p {
     font-size: 1.5rem;
     font-style: justify;
   }
+  /* Event Page */
   .don {
     display: flex;
     flex-direction: row;
@@ -299,6 +311,7 @@ footer p {
   .image-don-reverse {
     margin: 0 1.5rem;
   }
+  /* Contact Page */
   form {
     margin: auto;
   }
