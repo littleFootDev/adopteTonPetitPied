@@ -2,26 +2,35 @@ const btns = document.querySelectorAll(".action");
 const texts = document.querySelectorAll(".card-text");
 const btnCachers = document.querySelectorAll(".btn-red");
 
-console.log(texts);
-btns.forEach((btn) => {
-  texts.forEach((text) => {
+for (let i = 0; i < btns.length; i++) {
+  for (let j = 0; j < texts.length; j++) {
+    let btn = btns[i];
+    let text = texts[j];
     btn.addEventListener("click", () => {
-      btn.classList.add("hiden");
-      text.classList.add("visible");
+      if (i === j) {
+        btn.classList.add("hiden");
+        text.classList.toggle("visible");
+      }
     });
-  });
-});
-
-btnCachers.forEach((btnC) => {
-  texts.forEach((text) => {
+  }
+}
+for (let i = 0; i < btnCachers.length; i++) {
+  for (let j = 0; j < texts.length; j++) {
+    let btnC = btnCachers[i];
+    let text = texts[j];
     btnC.addEventListener("click", () => {
-      text.classList.remove("visible");
-      text.classList.add("hiden");
+      if (i === j) {
+        text.classList.toggle("visible");
+      }
     });
-  });
-  btns.forEach((btn) => {
+  }
+  for (let e = 0; e < btns.length; e++) {
+    let btn = btns[e];
+    let btnC = btnCachers[i];
     btnC.addEventListener("click", () => {
-      btn.classList.remove("hiden");
+      if (i === e) {
+        btn.classList.remove("hiden");
+      }
     });
-  });
-});
+  }
+}
