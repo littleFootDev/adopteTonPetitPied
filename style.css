@@ -56,7 +56,8 @@ h1 a {
   font-size: 1.3rem;
 }
 .content-presentation,
-.histoire {
+.histoire,
+.adresse {
   display: flex;
   min-width: 30em;
   flex-direction: column-reverse;
@@ -69,7 +70,8 @@ h1 a {
   background-position: center center;
 }
 .presentation-txt,
-.histoire-txt {
+.histoire-txt,
+.txt-adresse {
   width: 100%;
   padding: 4rem 2rem;
   display: flex;
@@ -79,18 +81,21 @@ h1 a {
   color: #fff;
 }
 .presentation-txt h2,
-.histoire-txt h2 {
+.histoire-txt h2,
+.txt-adresse h2 {
   margin-bottom: 2rem;
 }
 .presentation-txt p,
-.histoire-txt p {
+.histoire-txt p,
+.txt-adresse p {
   font-size: 1.3rem;
   line-height: 1.8rem;
   letter-spacing: 0.5px;
   font-style: justify;
 }
 .presentation-img img,
-.histoire-img img {
+.histoire-img img,
+.img-adresse img {
   width: 100%;
 }
 .content-partenaire {
@@ -195,6 +200,7 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
 }
 .txt-don p {
   font-size: 1.3rem;
@@ -203,6 +209,34 @@ footer p {
   padding: 1.5rem 0;
 }
 /* Contact page */
+.img-adresse {
+  min-height: 30em;
+  background-size: cover;
+  background-position: center center;
+}
+.reseaux {
+  width: 100;
+  background: #637d96;
+  color: #fff;
+}
+.reseaux-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-style: justify;
+}
+.reseaux-content i {
+  margin: 0 0.5rem;
+  color: #111;
+  transition: all 0.4s;
+}
+.reseaux-content i:hover {
+  margin-left: 1rem;
+  color: #fff;
+  transition: all 0.4s;
+}
 .contact {
   width: 80%;
   background: #637d96;
@@ -243,11 +277,17 @@ footer p {
 
 /*Desctops */
 @media screen and (min-width: 768px) {
+  /* commun */
   .navigation {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  footer {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  /* home Page */
   .content-presentation {
     flex-flow: row nowrap;
     min-width: 60rem;
@@ -263,10 +303,7 @@ footer p {
     width: 80%;
     margin: auto;
   }
-  footer {
-    padding: 1rem;
-    font-size: 1rem;
-  }
+  /* History Page*/
   .histoire {
     flex-direction: column;
     width: 80%;
@@ -280,8 +317,15 @@ footer p {
     margin: auto;
   }
   .btn-red,
-  .btn-green {
+  .action {
     display: none;
+  }
+  /* Pensionaire Page */
+  .card {
+    width: 70%;
+  }
+  .card-img-top {
+    height: 30rem;
   }
   .card-text {
     display: flex;
@@ -291,6 +335,7 @@ footer p {
     font-size: 1.5rem;
     font-style: justify;
   }
+  /* Event Page */
   .don {
     display: flex;
     flex-direction: row;
@@ -298,6 +343,15 @@ footer p {
   .image-don,
   .image-don-reverse {
     margin: 0 1.5rem;
+  }
+  /* Contact Page */
+  .adresse {
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+  }
+  .img-adresse img {
+    height: 50em;
   }
   form {
     margin: auto;
